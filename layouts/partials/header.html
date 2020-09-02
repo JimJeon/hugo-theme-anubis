@@ -3,13 +3,16 @@
 </h1>
 {{ if .Site.Menus.main }}
     <nav>
-        <form action="{{ "search" | absURL }}">
-            <input id="search-query" name="query" />
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
-            {{ end }}
-        </form>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
+        {{ end }}
+
+        <div class="search-div">
+            <form class="search-form" action="{{ "search" | absURL }}" for="search-input">
+                <input id="search-input" type="text" name="s" />
+            </form>
+        </div>
     </nav>
 {{ else }}
     <nav></nav>

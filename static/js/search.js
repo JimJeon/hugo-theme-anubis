@@ -16,7 +16,7 @@ var fuseOptions = {
 	]
 };
 
-var searchQuery = param("query");
+var searchQuery = param("s");
 if (searchQuery) {
 	$("#search-query").val(searchQuery);
 	executeSearch(searchQuery);
@@ -105,13 +105,3 @@ function render(templateString, data) {
 	}
 	return templateString;
 }
-
-$("#search-input").on({
-    focus: function () {
-        $(this).parent('form').addClass('search-active');
-    },
-    blur: function () {
-        if ($(this).val().length == 0)
-            $(this).parent('form').removeClass('search-active');
-    }
-})

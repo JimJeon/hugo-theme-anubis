@@ -7,7 +7,25 @@
         {{ range .Site.Menus.main }}
         <a class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">{{ .Name }}</a>
         {{ end }}
+
+        <div class="search-div">
+            <form class="search-form" action="{{ "search" | absURL }}" for="search-input">
+                <input id="search-input" type="text" name="s" />
+            </form>
+        </div>
     </nav>
 {{ else }}
     <nav></nav>
 {{ end }}
+
+<script>
+   $("#search-input").on({
+       focus: function () {
+           $(this).parent('form').addClass('search-active');
+        },
+       blur: function () {
+           if ($(this).val().length == 0)
+               $(this).parent('form').removeClass('search-active');
+       }
+   })
+</script>

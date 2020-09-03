@@ -1,8 +1,8 @@
-# Anubis Theme for Hugo [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/paypalme/mitrichius/1)
+# Anubis Theme for Hugo with Search[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
-![Anubis Screenshot](https://raw.githubusercontent.com/mitrichius/hugo-theme-anubis/master/images/screenshot.png)
+![Anubis Screenshot](https://raw.githubusercontent.com/JimJeon/hugo-theme-anubis-with-search/master/images/screenshot.png)
 
 ## Features
 
@@ -26,7 +26,7 @@ Anubis is a simple minimalist theme for [Hugo blog engine](https://gohugo.io/).
 
 Inside the folder of your Hugo site run:
 
-    $ git submodule add https://github.com/mitrichius/hugo-theme-anubis.git themes/anubis
+    $ git submodule add https://github.com/JimJeon/hugo-theme-anubis-with-search.git themes/anubis
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -100,9 +100,6 @@ Only works for production environment. You either build your site with variable 
 `HUGO_ENV=production hugo --minify`
 or just put `env: production` to `params` section of config.
 
-### Multilingual mode 
-Check config/example usage in [exampleSiteMultilingual](https://github.com/Mitrichius/hugo-theme-anubis/tree/master/exampleSiteMultilingual) directory and documentation on [Hugo site](https://gohugo.io/content-management/multilingual/).
-
 ### Robots.txt
 Based on environment.  
 For production — allow all, for other — disallow all.
@@ -115,13 +112,13 @@ Enabled by `paginationSinglePost` param in `params` section of config.
 
 ## Contributing
 
-If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/mitrichius/hugo-theme-anubis/issues) or make a PR.
+If you find a bug or have an idea for a feature, feel free to write an [issue](https://github.com/JimJeon/hugo-theme-anubis-with-search/issues) or make a PR.
 
 ## TODO
-See [issues](https://github.com/mitrichius/hugo-theme-anubis/issues).
+See [issues](https://github.com/JimJeon/hugo-theme-anubis-with-search/issues).
 
 ## License
 MIT
 
-© Dmitry Kolosov
+© Jim Jeon
 2020

@@ -5,6 +5,9 @@
 {{ end }}
 <html lang="{{ .Site.LanguageCode }}" data-theme="{{ $dataTheme }}">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
     {{ block "scripts" . }}{{ end }}
     {{ block "head" . }}
         {{ partial "head.html" . }}

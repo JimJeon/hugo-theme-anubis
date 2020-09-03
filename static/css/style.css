@@ -147,6 +147,8 @@ code {
 
     color: var(--code-color);
     background: var(--code-bg-color);
+
+    border-radius: .3em;
 }
 
 /* Styles */

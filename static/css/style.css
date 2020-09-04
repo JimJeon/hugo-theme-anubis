@@ -166,9 +166,10 @@ p {
 }
 
 hr {
-    border-top: 1px solid var(--hr-color);
-    height: 1px;
     border: 0;
+    border-color: var(--hr-color);
+    border-bottom: 1px solid var(--hr-color);
+    height: 1em;
 }
 
 ul ol, ol ol, ul ul {

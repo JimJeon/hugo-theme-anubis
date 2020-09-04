@@ -123,8 +123,6 @@ th, td {
 
 /* Code */
 pre {
-    color: var(--code-color);
-    background: var(--code-bg-color);
     padding: 1em;
     max-width: 100%;
     overflow: auto;
@@ -142,6 +140,7 @@ kbd {
 
 pre code {
     background: 0;
+    color: var(--font-color);
 }
 
 code {
